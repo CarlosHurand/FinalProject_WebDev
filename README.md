@@ -20,7 +20,7 @@
 <br />
 <p align = "center">
   <a href = "https://github.com/CarlosHurand/FinalProject_WebDev">
-    <img src = "images/logo.png" alt = "Logo" width = "600" height = "180">
+    <img src = "images/ITESM_Logo.png" alt = "Logo" width = "600" height = "180">
   </a>
 
   <h1 align = "center">Practice Typer</h1>
