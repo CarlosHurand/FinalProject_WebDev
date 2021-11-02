@@ -1,13 +1,11 @@
 <!--
-*** Thanks for checking out Flask-Practice-Typer-Team3. If you have a suggestion
+*** Thanks for checking out our project. If you have a suggestion
 *** that would make this better, please open an issue.
 *** Thanks again!
 ***
 ***
 ***
 -->
-
-
 
 <!-- PROJECT SHIELDS -->
 <!--
@@ -17,48 +15,40 @@
 *** for contributors-url, etc. This is the concise syntax.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Issues][issues-shield]][issues-url]
 
 <!-- PROJECT LOGO -->
 <br />
-<p align="center">
-  <a href="https://github.com/carlosricov/Flask-Practice-Typer-Team3">
-    <img src="images/logo.png" alt="Logo" width="600" height="180">
+<p align = "center">
+  <a href = "https://github.com/CarlosHurand/FinalProject_WebDev">
+    <img src = "images/logo.png" alt = "Logo" width = "600" height = "180">
   </a>
 
-  <h1 align="center">Practice Typer</h1>
+  <h1 align = "center">Practice Typer</h1>
 
-  <p align="center">
+  <p align = "center">
     A website capable of  improving your skills as a programmer through the wonders of retyping. We aim to improve your typing speed, adaptability to different languages, and overall comfort by giving you the opportunity to retype code snippets.
     <br />
-    <a href="https://github.com/carlosricov/Flask-Practice-Typer-Team3"><strong>Explore the docs »</strong></a>
+    <a href = "https://github.com/CarlosHurand/FinalProject_WebDev"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/carlosricov/Flask-Practice-Typer-Team3/issues">Report Bug</a>
+    <a href = "https://github.com/CarlosHurand/FinalProject_WebDev/issues">Report Bug</a>
     ·
-    <a href="https://github.com/carlosricov/Flask-Practice-Typer-Team3/issues">Request Feature</a>
+    <a href = "https://github.com/CarlosHurand/FinalProject_WebDev/issues">Request Feature</a>
   </p>
 </p>
 
-
-
 <!-- TABLE OF CONTENTS -->
-<details open="open">
-  <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
+<details open = "open">
+  <summary><h2 style = "display: inline-block">Table of Contents</h2></summary>
   <ol>
-    <li><a href="#landing-page">Landing Page</a></li>
-    <li><a href="#built-with">Built With</a></li>
-    <li><a href="#installation">Installation</a></li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#page-running-on-AWS">Page running on AWS</a></li>
-    <li><a href="#contributions">Contributions</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href = "#landing-page">Landing Page</a></li>
+    <li><a href = "#built-with">Built With</a></li>
+    <li><a href = "#installation">Installation</a></li>
+    <li><a href = "#usage">Usage</a></li>
+    <li><a href = "#contributions">Contributions</a></li>
+    <li><a href = "#contact">Contact</a></li>
   </ol>
 </details>
-
-
 
 <!-- ABOUT THE PROJECT -->
 ## Landing Page
@@ -105,11 +95,3 @@
 ## Contact
 
 Project Link: [https://github.com/CarlosHurand/FinalProject_WebDev](https://github.com/CarlosHurand/FinalProject_WebDev)
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/carlosricov/Flask-Practice-Typer-Team3.svg?style=for-the-badge
-[contributors-url]: https://github.com/carlosricov/Flask-Practice-Typer-Team3/graphs/contributors
-[issues-shield]: https://img.shields.io/github/issues/carlosricov/Flask-Practice-Typer-Team3.svg?style=for-the-badge
-[issues-url]: https://github.com/carlosricov/Flask-Practice-Typer-Team3/issues
-[license-shield]: https://img.shields.io/github/license/carlosricov/Flask-Practice-Typer-Team3.svg?style=for-the-badge
