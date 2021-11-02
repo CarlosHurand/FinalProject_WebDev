@@ -53,7 +53,11 @@
 <!-- ABOUT THE PROJECT -->
 ## Landing Page
 
-[![Product Name Screen Shot][product-screenshot]](images/ITESM_Logo.png)
+<p align = "center">
+  <a href = "https://github.com/CarlosHurand/FinalProject_WebDev">
+    <img src = "images/landingpage.png" alt = "Logo" width = "600" height = "180">
+  </a>
+</P>
 
 ## Built With
 
