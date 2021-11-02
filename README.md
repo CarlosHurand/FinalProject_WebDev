@@ -19,10 +19,6 @@
 -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![MLH LinkedIn][linkedin-shield]][linkedin-url]
-
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -97,32 +93,18 @@
 3. Type out as many code snippets as possible in 60 seconds using Python, Javascript, or Java.
 4. Watch how the website displays your stats like errors and accuracy.
 
-## Page running on AWS
-- *[Practice Typer](https://accutype.duckdns.org/)*
-
 <!-- CONTRIBUTIONS -->
 ## Contributions
 
-* Carlos Ricoveri : Landing page, Dashboard page, Settings page
-* Gibson Sanchez : Register and Login pages, Typer feature, Troubleshooting
-* Juan Carlos Hurtado : Register and Login pages, Signout page, Python testing
-* Valerie Mac Comish : Containarization, Testing with bash script, Documentation
-
-
-
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
-
-
+* Aaron Rosas - A010.
+* Isaac Garza - A010.
+* Mauricio Cassab - A010.
+* Juan Carlos Hurtado - A01025193.
 
 <!-- CONTACT -->
 ## Contact
 
-MLH Fellowship - [@MLHacks](https://twitter.com/MLHacks) - admissions@mlhfellowship.recruitee.com
-
-Project Link: [https://github.com/carlosricov/Flask-Practice-Typer-Team3](https://github.com/carlosricov/Flask-Practice-Typer-Team3)
+Project Link: [https://github.com/CarlosHurand/FinalProject_WebDev](https://github.com/CarlosHurand/FinalProject_WebDev)
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
@@ -131,7 +113,3 @@ Project Link: [https://github.com/carlosricov/Flask-Practice-Typer-Team3](https:
 [issues-shield]: https://img.shields.io/github/issues/carlosricov/Flask-Practice-Typer-Team3.svg?style=for-the-badge
 [issues-url]: https://github.com/carlosricov/Flask-Practice-Typer-Team3/issues
 [license-shield]: https://img.shields.io/github/license/carlosricov/Flask-Practice-Typer-Team3.svg?style=for-the-badge
-[license-url]: https://github.com/carlosricov/Flask-Practice-Typer-Team3/blob/master/LICENSE
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://www.linkedin.com/company/major-league-hacking/mycompany/
-[product-screenshot]: images/landingpage.png
