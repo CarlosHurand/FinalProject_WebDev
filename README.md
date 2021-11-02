@@ -55,7 +55,7 @@
 
 <p align = "center">
   <a href = "https://github.com/CarlosHurand/FinalProject_WebDev">
-    <img src = "images/landingpage.png" alt = "Logo" width = "600" height = "180">
+    <img src = "images/landingpage.png" alt = "Logo" width = "600" height = "800">
   </a>
 </P>
 
