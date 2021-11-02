@@ -53,7 +53,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Landing Page
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](images/ITESM_Logo.png)
 
 ## Built With
 
