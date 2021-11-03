@@ -116,7 +116,7 @@ def register():
         if error == 0:
             db.execute(
                 "INSERT INTO user (username, password, fname, lname) VALUES (?, ?)",
-                (username, generate_password_hash(password),fname,lname),
+                (username, generate_password_hash(password), fname, lname),
             )
             db.commit()
             flash(f"User {username} created successfully", "success")
@@ -158,11 +158,11 @@ def settings():
 @app.route("/dash/settings/edit", methods=("GET", "POST"))
 @login_required
 def edit():
-    if 'username' in session:
-        username = session['username']
+    if "username" in session:
+        username = session["username"]
         db = get_db()
         user = db.execute(
-        "SELECT * FROM user WHERE username = ?", (username,)
+            "SELECT * FROM user WHERE username = ?", (username,)
         ).fetchone()
         flash(user)
 
