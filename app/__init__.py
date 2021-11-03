@@ -110,8 +110,7 @@ def register():
         elif not password:
             error = 2
         elif (
-            db.execute("SELECT id FROM user WHERE username = ?",
-                       (username,)).fetchone()
+            db.execute("SELECT id FROM user WHERE username = ?", (username,)).fetchone()
             is not None
         ):
             error = 3
