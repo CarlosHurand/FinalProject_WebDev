@@ -91,7 +91,7 @@
 ## Contributions
 
 * Aaron Rosas - A010.
-* Isaac Garza - A010.
+* Isaac Garza - A01025798.
 * Mauricio Cassab - A010.
 * Juan Carlos Hurtado - A01025193.
 
