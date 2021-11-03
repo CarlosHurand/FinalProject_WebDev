@@ -34,6 +34,8 @@ db.init_app(app)
 toastr = Toastr(app)
 
 # We must confirm the user logs in before accessing the dashboard.
+
+
 def login_required(f):
     @wraps(f)
     def wrap(*args, **kwargs):
@@ -108,14 +110,15 @@ def register():
         elif not password:
             error = 2
         elif (
-            db.execute("SELECT id FROM user WHERE username = ?", (username,)).fetchone()
+            db.execute("SELECT id FROM user WHERE username = ?",
+                       (username,)).fetchone()
             is not None
         ):
             error = 3
 
         if error == 0:
             db.execute(
-                "INSERT INTO user (username, password, fname, lname) VALUES (?, ?)",
+                "INSERT INTO user (username, password, fname, lname) VALUES (?, ?, ?, ?)",
                 (username, generate_password_hash(password), fname, lname),
             )
             db.commit()
@@ -152,20 +155,50 @@ def typer():
 @app.route("/dash/settings")
 @login_required
 def settings():
-    return render_template("/dash/settings.html")
-
-
-@app.route("/dash/settings/edit", methods=("GET", "POST"))
-@login_required
-def edit():
     if "username" in session:
         username = session["username"]
         db = get_db()
         user = db.execute(
             "SELECT * FROM user WHERE username = ?", (username,)
         ).fetchone()
-        flash(user)
 
+        fname = user["fname"]
+        lname = user["lname"]
+        password = user["password"]
+        flash(f"User {username} updated successfully", "success")
+        return render_template("/dash/settings.html")
+    return render_template("/dash/settings.html")
+
+
+@app.route("/dash/settings/edit", methods=("GET", "POST"))
+@login_required
+def edit():
+    if request.method == "GET":
+        if "username" in session:
+            username = session["username"]
+            db = get_db()
+            user = db.execute(
+                "SELECT * FROM user WHERE username = ?", (username,)
+            ).fetchone()
+
+            fname = user["fname"]
+            lname = user["lname"]
+            password = user["password"]
+            return render_template("/dash/settings/edit.html")
+    else:
+        db = get_db()
+        username = request.form.get("username")
+        password = request.form.get("password")
+        fname = request.form.get("name")
+        lname = request.form.get("lastname")
+
+        db.execute(
+            "UPDATE user SET username = ?, password = ?, fname = ?, lname = ? WHERE username = ?",
+            (username, generate_password_hash(password), fname, lname, username),
+        )
+        db.commit()
+        flash(f"User {username} updated successfully", "success")
+        return render_template("/dash/settings.html")
     return render_template("/dash/settings/edit.html")
 
 
