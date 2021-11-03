@@ -98,6 +98,8 @@ def register():
     if request.method == "POST":
         username = request.form.get("username")
         password = request.form.get("password")
+        fname = request.form.get("name")
+        lname = request.form.get("lastname")
         db = get_db()
         error = 0
 
@@ -113,8 +115,8 @@ def register():
 
         if error == 0:
             db.execute(
-                "INSERT INTO user (username, password) VALUES (?, ?)",
-                (username, generate_password_hash(password)),
+                "INSERT INTO user (username, password, fname, lname) VALUES (?, ?)",
+                (username, generate_password_hash(password),fname,lname),
             )
             db.commit()
             flash(f"User {username} created successfully", "success")
@@ -153,9 +155,17 @@ def settings():
     return render_template("/dash/settings.html")
 
 
-@app.route("/dash/settings/edit")
+@app.route("/dash/settings/edit", methods=("GET", "POST"))
 @login_required
 def edit():
+    if 'username' in session:
+        username = session['username']
+        db = get_db()
+        user = db.execute(
+        "SELECT * FROM user WHERE username = ?", (username,)
+        ).fetchone()
+        flash(user)
+
     return render_template("/dash/settings/edit.html")
 
 
