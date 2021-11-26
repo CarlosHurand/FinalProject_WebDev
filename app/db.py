@@ -29,7 +29,7 @@ def init_db():
         db.executescript(f.read().decode("utf8"))
 
 
-# Flask init-db command that initializes the database.
+# Flask init-db command that initializes the database..
 @click.command("init-db")
 @with_appcontext
 def init_db_command():
