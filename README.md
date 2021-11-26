@@ -92,7 +92,7 @@
 
 * Aaron Rosas - A01335324.
 * Isaac Garza - A01025798.
-* Mauricio Cassab - A010.
+* Mauricio Cassab - A01025475.
 * Juan Carlos Hurtado - A01025193.
 
 <!-- CONTACT -->
